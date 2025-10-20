@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS NU KEDUNGWUNI - Pelayanan Kesehatan Terpercaya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-hospital"></i>
+                RS NU KEDUNGWUNI
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#testimonial">Testimoni</a></li>
+                <li><a href="#team">Tim</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#" class="login-btn" onclick="openModal(); return false;">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="carousel-container">
+            <div class="carousel-slide slide1 active">
+                <div class="hero-content">
+                    <h1>Selamat Datang di RS NU KEDUNGWUNI</h1>
+                    <p>Pelayanan kesehatan terbaik untuk Anda dan keluarga tercinta</p>
+                    <a href="#contact" class="cta-button">Hubungi Kami</a>
+                </div>
+            </div>
+            <div class="carousel-slide slide2">
+                <div class="hero-content">
+                    <h1>Fasilitas Modern & Lengkap</h1>
+                    <p>Dilengkapi dengan teknologi medis terkini untuk pelayanan optimal</p>
+                    <a href="#about" class="cta-button">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="carousel-slide slide3">
+                <div class="hero-content">
+                    <h1>Tim Dokter Profesional</h1>
+                    <p>Didukung oleh tenaga medis berpengalaman dan bersertifikat</p>
+                    <a href="#team" class="cta-button">Lihat Tim Kami</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-nav">
+            <span class="carousel-dot active" onclick="goToSlide(0)"></span>
+            <span class="carousel-dot" onclick="goToSlide(1)"></span>
+            <span class="carousel-dot" onclick="goToSlide(2)"></span>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title">Layanan Unggulan Kami</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-user-md"></i></div>
+                <h3>Dokter Ahli</h3>
+                <p>Tim dokter spesialis berpengalaman siap melayani Anda 24/7</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-ambulance"></i></div>
+                <h3>Layanan Darurat</h3>
+                <p>Unit gawat darurat yang responsif dan siap sedia setiap saat</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+                <h3>Laboratorium Modern</h3>
+                <p>Pemeriksaan laboratorium dengan peralatan canggih dan akurat</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-heartbeat"></i></div>
+                <h3>Perawatan Intensif</h3>
+                <p>Ruang ICU dengan monitoring 24 jam dan perawatan maksimal</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-heartbeat"></i></div>
+                <h3>Fasilitas Modern</h3>
+                <p>Fasilitas berteknologi tinggi dan perawatan maksimal</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-heartbeat"></i></div>
+                <h3>Pelayanan Terbaik</h3>
+                <p>Pelayanan 24 jam dan perawatan maksimal</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Tentang RS NU KEDUNGWUNI</h2>
+                <p>RS NU KEDUNGWUNI telah melayani masyarakat selama lebih dari 20 tahun dengan komitmen memberikan pelayanan kesehatan berkualitas tinggi dan terjangkau.</p>
+                <p>Kami percaya bahwa setiap orang berhak mendapatkan akses ke layanan kesehatan terbaik. Dengan dukungan tenaga medis profesional, fasilitas modern, dan teknologi terkini, kami siap menjadi mitra kesehatan terpercaya Anda.</p>
+                <p>Visi kami adalah menjadi rumah sakit pilihan utama yang memberikan pelayanan kesehatan komprehensif dengan standar internasional.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600" alt="Rumah Sakit">
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <h2 class="section-title">Blog Kesehatan</h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-image">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="blog-content">
+                    <h3>Tips Menjaga Kesehatan Jantung</h3>
+                    <p>Pelajari cara-cara sederhana namun efektif untuk menjaga jantung Anda tetap sehat dan kuat sepanjang hidup.</p>
+                    <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-image">
+                    <i class="fas fa-baby"></i>
+                </div>
+                <div class="blog-content">
+                    <h3>Pentingnya Imunisasi untuk Anak</h3>
+                    <p>Ketahui manfaat imunisasi dan jadwal yang direkomendasikan untuk melindungi buah hati Anda dari berbagai penyakit.</p>
+                    <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-image">
+                    <i class="fas fa-apple-alt"></i>
+                </div>
+                <div class="blog-content">
+                    <h3>Pola Makan Sehat Seimbang</h3>
+                    <p>Panduan lengkap nutrisi seimbang untuk menjaga kesehatan tubuh dan meningkatkan kualitas hidup Anda.</p>
+                    <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial" id="testimonial">
+        <h2 class="section-title" style="color: white;">Testimoni Pasien</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-slide active">
+                <p class="testimonial-content">"Pelayanan di RS NU KEDUNGWUNI sangat memuaskan. Dokter dan perawatnya ramah, profesional, dan sangat peduli dengan kondisi pasien. Terima kasih atas perawatan yang luar biasa!"</p>
+                <p class="testimonial-author">- Budi Santoso</p>
+            </div>
+            <div class="testimonial-slide">
+                <p class="testimonial-content">"Fasilitasnya sangat bersih dan modern. Saya merasa sangat nyaman selama menjalani perawatan di sini. Proses administrasi juga sangat cepat dan mudah."</p>
+                <p class="testimonial-author">- Ani Wijaya</p>
+            </div>
+            <div class="testimonial-slide">
+                <p class="testimonial-content">"Terima kasih RS NU KEDUNGWUNI atas perawatan yang luar biasa. Saya pulih dengan cepat berkat penanganan yang tepat dan profesional dari tim medis."</p>
+                <p class="testimonial-author">- Joko Susilo</p>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button class="testimonial-btn" onclick="changeTestimonial(-1)">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="testimonial-btn" onclick="changeTestimonial(1)">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+<section class="team" id="team">
+    <h2 class="section-title">Tim Dokter Kami</h2>
+    <div class="team-grid">
+        <div class="team-card">
+            <div class="team-avatar"><img src="Img/hkm.jpeg" alt="Foto Dr. Muhammad Hikam Ahsan"></div>
+            <h3>Dr. M. Hikam Ahsan</h3>
+            <p class="team-role">Spesialis Penyakit Hati</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/hikam4411?igsh=dTM2OXBlNm81NjY4" class="social-icon-sm" aria-label="Instagram Dr. Hikam"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="team-card">
+            <div class="team-avatar"><img src="Img/nv.jpeg" alt="Foto Dr. Nova Ardiansyah"></div>
+            <h3>Dr. Nova Ardiansyah</h3>
+            <p class="team-role">Spesialis Saraf</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/novaardiansyah346?igsh=ZTllOGZicTkwemJq" class="social-icon-sm" aria-label="Instagram Dr. Nova"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="team-card">
+            <div class="team-avatar"><img src="Img/mya.jpeg" alt="Foto Dr. Maya Zainah Qorina"></div>
+            <h3>Dr. Maya Zainah Qorina</h3>
+            <p class="team-role">Spesialis Anak</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/mayazaii?igsh=MXc1dWhoOTV1cWs0ZA%3D%3D&utm_source=qr" class="social-icon-sm" aria-label="Instagram Dr. Maya"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="team-card">
+            <div class="team-avatar"><img src="Img/pry.jpeg" alt="Foto Dr. Priya Septiano"></div>
+            <h3>Dr. Priya Septiano</h3>
+            <p class="team-role">Spesialis Bedah</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/priyasptno_?igsh=ZDNjbXU2NHY4bHF4" class="social-icon-sm" aria-label="Instagram Dr. Priya"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                    <div>
+                        <strong>Alamat</strong>
+                        <p>Jl. Karangdowo No.9, Kemoren, Karangdowo, Kec. Kedungwuni, Kabupaten Pekalongan, Jawa Tengah 51173</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                    <div>
+                        <strong>Telepon</strong>
+                        <p>(021) 0123-4567 (24 Jam)</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                    <div>
+                        <strong>Email</strong>
+                        <p>info@RSNUKEDUNGWUNI.co.id</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.412165274113!2d109.63610181082488!3d-6.960609868121703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7021b4d2b766bb%3A0x40dacfe03dd23e15!2sITSNU%20Pekalongan!5e0!3m2!1sid!2sid!4v1760511339150!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2024 RS NU KEDUNGWUNI. Hak Cipta Dilindungi Undang-Undang.</p>
+    </footer>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Login Pasien / Karyawan</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">Nama Pengguna / No. Rekam Medis</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Kata Sandi</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Masuk</button>
+            </form>
+        </div>
+    </div>
+
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
